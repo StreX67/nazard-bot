@@ -1,4 +1,4 @@
-
+require
 const {
   Client,
   GatewayIntentBits,
@@ -81,7 +81,7 @@ client.on("ready", () => {
 // =====================
 // ZAŁADUJ DODATKOWE KOMENDY Z FOLDERU bot/
 // =====================
-require("./bot/index1")(client, db, getUser, setMoney, setField);
+//require("./bot/index1")(client, db, getUser, setMoney, setField);
 
 // =====================
 // GŁÓWNE KOMENDY
