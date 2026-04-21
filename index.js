@@ -1,4 +1,4 @@
-require
+require("dotenv").config();
 const {
   Client,
   GatewayIntentBits,
@@ -9,7 +9,7 @@ const {
 
 const sqlite3 = require("sqlite3").verbose();
 
-const TOKEN = "MTQ5NDc1ODkxNDIzMzg2MDEyNw.G1u6cD.Ur5PJ6yDW9PiHluiN1XUxOF0ksd39Yapyvc2SY";
+
 const CLIENT_ID = "1494758914233860127";
 
 const client = new Client({
@@ -414,4 +414,4 @@ client.on("interactionCreate", async interaction => {
   }
 });
 
-client.login("MTQ5NDc1ODkxNDIzMzg2MDEyNw.G1u6cD.Ur5PJ6yDW9PiHluiN1XUxOF0ksd39Yapyvc2SY");
+client.login(process.env.TOKEN);
